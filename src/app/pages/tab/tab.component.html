@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="navbar">
+  <span color="primary" (click)="opened = !opened"
+    ><mat-icon>menu</mat-icon>
+  </span>
+  &nbsp;&nbsp;
+  <a routerLink="/">
+    <span
+      ><img
+        src="https://images.squarespace-cdn.com/content/v1/60784c037df8cf1b1ccb72ed/6b6f246f-c47b-4fe7-8e54-06aa6b575c87/logoBRM_gris.png?format=1500w"
+        alt=""
+        width="120"
+      /> </span
+  ></a>
+
+  <span class="fill-remaining-space"></span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sideNav [(opened)]="opened" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">
+        <mat-icon class="mat-18">assignment</mat-icon>Inventario
+      </a>
+    </mat-nav-list>
+
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/productos">
+        <mat-icon class="mat-18">account_circle</mat-icon>Productos
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

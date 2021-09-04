@@ -1,0 +1,61 @@
+.row {
+  margin: 0px !important;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  
+}
+
+.form_login {
+
+  .divider {
+    width: 100%;
+    padding: 10px 20px;
+
+    &:nth-child(1) {
+      margin-top: 20px;
+    }
+
+    .mat-form-field {
+      width: 100%
+    }
+  }
+
+
+
+  .btn_login {
+    .mat-raised-button {
+      width: 100%;
+    }
+  }
+}
+table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@keyframes fluido {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.example-right-align {
+  text-align: right;
+}
